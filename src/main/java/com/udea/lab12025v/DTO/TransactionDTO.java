@@ -10,7 +10,7 @@ public class TransactionDTO {
     private String senderAccountNumber;
     private String receiverAccountNumber;
     private Double amount;
-    private LocalDateTime transactionDate;
+    //private LocalDateTime transactionDate;
 
     public TransactionDTO() {
     }
@@ -20,7 +20,7 @@ public class TransactionDTO {
         this.senderAccountNumber = senderAccountNumber;
         this.receiverAccountNumber = receiverAccountNumber;
         this.amount = amount;
-        this.transactionDate = transactionDate;
+        //this.transactionDate = transactionDate;
     }
 
     public Long getId() {
@@ -55,11 +55,11 @@ public class TransactionDTO {
         this.amount = amount;
     }
 
-    public LocalDateTime getTransactionDate() {
-        return transactionDate;
-    }
-
-    public void setTransactionDate(LocalDateTime transactionDate) {
-        this.transactionDate = transactionDate;
-    }
+//    public LocalDateTime getTransactionDate() {
+//        return transactionDate;
+//    }
+//
+//    public void setTransactionDate(LocalDateTime transactionDate) {
+//        this.transactionDate = transactionDate;
+//    }
 }

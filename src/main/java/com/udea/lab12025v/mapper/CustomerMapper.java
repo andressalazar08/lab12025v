@@ -9,6 +9,6 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel="spring")
 public interface CustomerMapper {
     CustomerMapper INSTANCE = Mappers.getMapper(CustomerMapper.class);
-    CustomerDTO toDTO(CustomerDTO customer);
+    CustomerDTO toDTO(Customer customer);
     Customer toEntity(CustomerDTO customerDTO);
 }

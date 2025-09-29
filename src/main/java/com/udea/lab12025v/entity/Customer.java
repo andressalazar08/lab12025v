@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 @Table(name="customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(unique=true, nullable=false)
     private String accountNumber;
