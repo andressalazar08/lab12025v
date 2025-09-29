@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/api/transactions", produces = "application/json")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TransactionController {
 
     @Autowired
